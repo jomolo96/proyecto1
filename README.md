@@ -1,4 +1,4 @@
-# proyecto1
+# PROYECTO 1
 1º DAW  
 Curso 2017/18  
 Écija (Sevilla)  
