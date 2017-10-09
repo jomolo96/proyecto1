@@ -47,7 +47,7 @@ recoge nuevos datos desde la entrada, se muestran los resultados, se leen/guarda
 - __MANTENIMIENTO__  
 
 
-#### __ANÁLISIS__
+##### __ANÁLISIS__
 
 - Se determina y define claramente las necesidades del cliente y se especifica los requisitos que debe cumplir el software a desarrollar. 
 - La especificación de requisitos debe:
@@ -61,7 +61,7 @@ recoge nuevos datos desde la entrada, se muestran los resultados, se leen/guarda
   - Fijar criterios de validación
 
 
-#### __DISEÑO__
+##### __DISEÑO__
 
 - Se descompone y organiza el sistema en elementos componentes que pueden ser desarrollados por separado.
 - Se especifica la interrelación y funcionalidad de los elementos componentes.
@@ -72,7 +72,7 @@ recoge nuevos datos desde la entrada, se muestran los resultados, se leen/guarda
   - Diseño de interfaz
 
 
-#### __CODIFICACIÓN__
+##### __CODIFICACIÓN__
 
 - Se escribe el código fuente de cada componente.
 - Pueden utilizarse distintos lenguajes informáticos:
@@ -80,13 +80,13 @@ recoge nuevos datos desde la entrada, se muestran los resultados, se leen/guarda
   - __Lenguajes de otro tipo__: HTML, XML, JSON, ...
 
 
-#### __PRUEBAS__
+##### __PRUEBAS__
 
 - El principal objetivo de las pruebas debe ser conseguir que el programa funcione incorrectamente y que se descubran defectos.
 - Deberemos someter al programa al máximo número de situaciones diferentes.
 
 
-#### __MANTENIMIENTO__
+##### __MANTENIMIENTO__
 
 - Durante la explotación del sistema software es necesario realizar cambios ocasionales.
 - Para ello hay que rehacer parte del trabajo realizado en las fases previas.
@@ -97,7 +97,7 @@ recoge nuevos datos desde la entrada, se muestran los resultados, se leen/guarda
   - __Adaptativo__: se adapta a nuevos entornos.
 
 
-###  Resultado tras cada fase (I)
+####  Resultado tras cada fase (I)
 
 - Ingeniería de sistemas: __Especificación del sistema__
 - ANÁLISIS: __Especificación de requisitos del software__
@@ -106,7 +106,7 @@ recoge nuevos datos desde la entrada, se muestran los resultados, se leen/guarda
 - CODIFICACIÓN: __Código fuente__
 
 
-###  Resultado tras cada fase (II)
+####  Resultado tras cada fase (II)
 
 ( _Continuación_ )
 
