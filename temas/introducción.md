@@ -1,41 +1,24 @@
-# Elementos de Desarrollo de Software
+## Elementos de Desarrollo de Software
 
 
-
-## Introducción
-
-
-### En esta Unidad aprenderemos a
-
-- Reconocer la relación de los programas con los componentes del sistema informático.
-- Diferenciar código fuente, objeto y ejecutable.
-- Identificar las fases de desarrollo de una aplicación informática.
-- Clasificar los lenguajes de programación.
-
-
-### Tipos de software 
+#### Tipos de software 
 
 - __De sistema__ (Sistema operativo, drivers)
 - __De aplicación__ (Suite ofimática, Navegador, Edición de imagen, ...)
 - __De desarrollo__ (Editores, compiladores, interpretes, ...)
 
 
-### Relación Hardware-Software  
-
-- __Disco duro__ :
-almacena de forma permanente los archivos ejecutables y los archivos de datos.
+#### Relación Hardware-Software  
 
 - __Memoria RAM__ :
 almacena de forma temporal el código binario de los archivos ejecutables y los archivos de datos necesarios.
- 
 - __CPU__ :
 lee y ejecuta instrucciones almacenadas en memoria RAM, así como los datos necesarios.
-
 - __E/S__ :
 recoge nuevos datos desde la entrada, se muestran los resultados, se leen/guardan a disco, ...
 
 
-### Códigos fuente, objeto y ejecutable
+#### Códigos fuente, objeto y ejecutable
 
 - __Código fuente__: archivo de texto legible escrito en un lenguaje de programación.
 - __Código objeto__ (intermedio): archivo binario no ejecutable.
@@ -43,10 +26,10 @@ recoge nuevos datos desde la entrada, se muestran los resultados, se leen/guarda
 
 
 
-## Ciclo de vida del software
+### Ciclo de vida del software
 
 
-### Ingeniería de software
+#### Ingeniería de software
 
 > Disciplina que estudia los principios y metodologías para el desarrollo y mantenimiento de sistemas software.
 
