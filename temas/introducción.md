@@ -31,7 +31,7 @@ recoge nuevos datos desde la entrada, se muestran los resultados, se leen/guarda
 
 #### Ingeniería de software
 
-> Disciplina que estudia los principios y metodologías para el desarrollo y mantenimiento de sistemas software.
+-Es la disciplina que estudia los principios y metodologías para el desarrollo y mantenimiento de sistemas software.
 
 - Algunos autores consideran que "___desarrollo de software___" es un término más apropiado que "___ingeniería de software___" puesto que este último implica niveles de rigor y prueba de procesos que no son apropiados para todo tipo de desarrollo de software.
 - [Ingeniería del software](https://es.wikipedia.org/wiki/Ingenier%C3%ADa_de_software)
