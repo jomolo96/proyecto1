@@ -26,10 +26,10 @@ recoge nuevos datos desde la entrada, se muestran los resultados, se leen/guarda
 
 
 
-### Ciclo de vida del software
+#### Ciclo de vida del software
 
 
-#### Ingeniería de software
+##### Ingeniería de software
 
 -Es la disciplina que estudia los principios y metodologías para el desarrollo y mantenimiento de sistemas software.
 
@@ -37,8 +37,8 @@ recoge nuevos datos desde la entrada, se muestran los resultados, se leen/guarda
 - [Ingeniería del software](https://es.wikipedia.org/wiki/Ingenier%C3%ADa_de_software)
 
 
-### Desarrollo de software 
-#### ___Fases principales___
+#### Desarrollo de software 
+##### ___Fases principales___
 
 - __ANÁLISIS__  
 - __DISEÑO__
