@@ -203,7 +203,7 @@ recoge nuevos datos desde la entrada, se muestran los resultados, se leen/guarda
 
 ### Metodologías ágiles (I)
 
-- Son métodos de ingeniería del software basados en el desarrollo iterativo e incremental.
+- Son métodos de ingeniería del software basados en el desarrollo iterativo e incremental, es decir, siempre va mejorando.
 - Los requisitos y soluciones evolucionan con el tiempo según la necesidad del proyecto.
 - El trabajo es realizado mediante la colaboración de equipos auto-organizados y multidisciplinarios, inmersos en un proceso compartido de toma de decisiones a corto plazo.
 - Las metodologías más conocidas son:
@@ -217,8 +217,8 @@ recoge nuevos datos desde la entrada, se muestran los resultados, se leen/guarda
 [Manifiesto por el Desarrollo Ágil](https://es.wikipedia.org/wiki/Manifiesto_%C3%A1gil)
 
 - __Individuos e interacciones__ sobre procesos y herramientas
-- __Software funcionando__ sobre documentación extensiva
-- __Colaboración con el cliente__ sobre negociación contractual
+- __Software funcionando__ sobre documentación extensiva, que nos hace falta para el siguiente paso.
+- __Colaboración con el cliente__ sobre negociación contractual, el cliente puede ir mejorando los requisitos.
 - __Respuesta ante el cambio__ sobre seguir un plan
 
 
