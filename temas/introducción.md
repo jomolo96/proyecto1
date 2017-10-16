@@ -242,11 +242,14 @@ Pizarra kanban
 #### __Scrum (I)__
 
 - Modelo de desarrollo incremental.
-- Interaciones (__sprint__) regulares cada 2 a 4 semanas.
-- Al principio de cada iteración se establecen sus __objetivos priorizados__ (__sprint backlog__).
+- Iteraciones (__sprint__) regulares cada 2 a 4 semanas.
+- Al principio de cada iteración se establecen sus __objetivos priorizados__ (__sprint backlog__), el backlog define las tareas que hay para desarrollar el programa.
 - Al finalizar cada iteración se obtiene una __entrega parcial utilizable por el cliente__.
-- Existen reuniones diarias para tratar la marcha del _sprint_.
-
+- Existen reuniones diarias para tratar la marcha del _sprint_., donde se le preguntan a los trabajadores 3 cosas: ¿ Qué hicieron ayer ? ¿ Qué van hacer hoy ? y si se han atascado en algo.
+Roles del equipo: Team Scrum
+                  Product out
+                  Scrum EXPERT
+                   
 
 #### __Scrum (II)__
 
@@ -257,11 +260,11 @@ Pizarra kanban
 
 __Valores__
 
-- Simplicidad
-- Comunicación
-- Retroalimentación
-- Valentía o coraje
-- Respeto o humildad 
+- Simplicidad, mantener el cdigo lo mas simple y limpio posible.
+- Comunicación, con el cliente y trabajadores.
+- Retroalimentación, vemos como va avanzando el desarrollo del proyecto.
+- Valentía o coraje, el programador debe estar de acuerdo en eliminar el código, a pesar el trabajo que le ha costado.
+- Respeto o humildad, valorar el trabajo de todo el mundo.
 
 
 #### __XP (Programación extrema) (II)__
