@@ -274,7 +274,7 @@ __Características__
 - Diseño sencillo
 - Pequeñas mejoras continuas
 - Pruebas y refactorización
-- Integración continua
+- Integración continua 
 - __Programación por parejas__
 - __El cliente se integra en el equipo de desarrollo__
 - Propiedad del código compartida
