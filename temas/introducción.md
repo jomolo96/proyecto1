@@ -236,7 +236,7 @@ recoge nuevos datos desde la entrada, se muestran los resultados, se leen/guarda
 
 Pizarra kanban
 
-![Pizarra kanban](img/kanban-board.png)
+![Pizarra kanban](../img/kanban-board.png)
 
 
 #### __Scrum (I)__
@@ -253,7 +253,7 @@ Roles del equipo: Team Scrum
 
 #### __Scrum (II)__
 
-![Proceso SCRUM](img/scrum.png)
+![Proceso SCRUM](../img/scrum.png)
 
 
 #### __XP (Programación extrema) (I)__
