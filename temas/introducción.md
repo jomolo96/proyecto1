@@ -130,7 +130,7 @@ recoge nuevos datos desde la entrada, se muestran los resultados, se leen/guarda
 
 ### Modelo en cascada (I)
 
-![Modelo en cascada](assets/cascada.png)
+![Modelo en cascada](../assets/cascada.png)
 
 
 ### Modelo en cascada (II)
@@ -145,7 +145,7 @@ recoge nuevos datos desde la entrada, se muestran los resultados, se leen/guarda
 
 ### Modelo en V (I)
 
-![Modelo en V](img/v.png)
+![Modelo en V](../img/v.png)
 
 
 ### Modelo en V (II)
@@ -164,7 +164,7 @@ recoge nuevos datos desde la entrada, se muestran los resultados, se leen/guarda
   - por no existir experiencia previa.
   - por omisión o falta de concreción del usuario/cliente.
 
-![Modelo de construcción de prototipos](img/prototipos.png)
+![Modelo de construcción de prototipos](../img/prototipos.png)
 
 
 ### Prototipos (II)
@@ -190,7 +190,7 @@ recoge nuevos datos desde la entrada, se muestran los resultados, se leen/guarda
 - Desarrollado por Boehm en 1988.
 - La actividad de ___ingeniería___ corresponde a las fases de los modelos clásicos: análisis, diseño, codificación, ...
 
-![Modelo en espiral](assets/espiral.png)
+![Modelo en espiral](../assets/espiral.png)
 
 
 ### Modelo en espiral (II)
@@ -198,7 +198,7 @@ recoge nuevos datos desde la entrada, se muestran los resultados, se leen/guarda
 
 - En la actividad de ___ingeniería___ se da gran importancia a la reutilización de código.
 
-![Modelo en espiral](img/espiral-poo.png)
+![Modelo en espiral](../img/espiral-poo.png)
 
 
 ### Metodologías ágiles (I)
