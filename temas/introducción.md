@@ -145,7 +145,7 @@ recoge nuevos datos desde la entrada, se muestran los resultados, se leen/guarda
 
 ### Modelo en V (I)
 
-![Modelo en V](assets/v.png)
+![Modelo en V](img/v.png)
 
 
 ### Modelo en V (II)
@@ -164,7 +164,7 @@ recoge nuevos datos desde la entrada, se muestran los resultados, se leen/guarda
   - por no existir experiencia previa.
   - por omisión o falta de concreción del usuario/cliente.
 
-![Modelo de construcción de prototipos](assets/prototipos.png)
+![Modelo de construcción de prototipos](img/prototipos.png)
 
 
 ### Prototipos (II)
@@ -198,7 +198,7 @@ recoge nuevos datos desde la entrada, se muestran los resultados, se leen/guarda
 
 - En la actividad de ___ingeniería___ se da gran importancia a la reutilización de código.
 
-![Modelo en espiral](assets/espiral-poo.png)
+![Modelo en espiral](img/espiral-poo.png)
 
 
 ### Metodologías ágiles (I)
@@ -236,7 +236,7 @@ recoge nuevos datos desde la entrada, se muestran los resultados, se leen/guarda
 
 Pizarra kanban
 
-![Pizarra kanban](assets/kanban-board.png)
+![Pizarra kanban](img/kanban-board.png)
 
 
 #### __Scrum (I)__
@@ -253,7 +253,7 @@ Roles del equipo: Team Scrum
 
 #### __Scrum (II)__
 
-![Proceso SCRUM](assets/scrum.png)
+![Proceso SCRUM](img/scrum.png)
 
 
 #### __XP (Programación extrema) (I)__
