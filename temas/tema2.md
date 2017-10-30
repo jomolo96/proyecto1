@@ -1,8 +1,9 @@
 
 # TEMA 2. Entornos integrados de desarrollo
-
+[Diapositivas] (jamj2000.github.io/entornosdesarrollo/2/diapositivas.md)
 
 ## Índice
+
 --- 
 ### Introducción
 ### Herramientas básicas
