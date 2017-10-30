@@ -1,6 +1,6 @@
 
 # TEMA 2. Entornos integrados de desarrollo
-![Diapositivas] (jamj2000.github.io/entornosdesarrollo/2/diapositivas.md)
+[Tema 1: Elementos de desarrollo del Software](jamj2000.github.io/entornosdesarrollo/2/diapositivas.md  
 
 ## Índice
 
