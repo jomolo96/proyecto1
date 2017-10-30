@@ -1,7 +1,5 @@
 
-## Entornos integrados de desarrollo
-
-[![cc-by-sa](assets/cc-by-sa.png)](http://creativecommons.org/licenses/by-sa/4.0/)
+# Entornos integrados de desarrollo
 
 
 ## Índice
