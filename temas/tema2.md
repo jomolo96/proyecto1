@@ -104,7 +104,7 @@ __API__ = Interfaz de Programación de Aplicaciones
 > Construir (Build) = Compilar + Enlazar
 
 - Dos opciones:
- - Herramientas de construcción
+ - Equipo Local.
  - Servidor de construcción
 
 
