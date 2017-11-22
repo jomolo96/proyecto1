@@ -4,24 +4,12 @@
 
 ## Índice
 
---- 
-### Introducción
 ### Herramientas básicas
 ### Entornos integrados de desarrollo (IDE)
 
-<!--- Note: Nota a pie de página. -->
 
 
 
-## Introducción
-
-
-En esta Unidad aprenderemos a:
-
-- Instalar entornos de desarrollo, propietarios y libres.
-- Personalizar y automatizar el entorno de desarrollo.
-- Generar ejecutables a partir de código fuente.
-- Identificar las características comunes y específicas de diversos entornos de desarrollo.
 
 
 ### Conceptos
@@ -36,7 +24,7 @@ En esta Unidad aprenderemos a:
 
 
 
-## Herramientas básicas
+# Herramientas básicas
 
 
 ### Lo básico
@@ -148,7 +136,7 @@ __API__ = Interfaz de Programación de Aplicaciones
 
 
 
-## Entornos integrados de desarrollo (IDE)
+# Entornos integrados de desarrollo (IDE)
 
 
 ### Ejemplos
