@@ -25,9 +25,6 @@ element: class="fragment" data-fragment-index="1"
 ### Integración
 ### Calidad
 
-<!--- Note: Nota a pie de página. -->
-
-
 
 ## Introducción
 
