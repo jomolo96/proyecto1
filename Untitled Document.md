@@ -1,179 +1,265 @@
-# Dillinger
-
-[![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
-
-Dillinger is a cloud-enabled, mobile-ready, offline-storage, AngularJS powered HTML5 Markdown editor.
-
-  - Type some Markdown on the left
-  - See HTML in the right
-  - Magic
-
-# New Features!
-
-  - Import a HTML file and watch it magically convert to Markdown
-  - Drag and drop images (requires your Dropbox account be linked)
 
 
-You can also:
-  - Import and save files from GitHub, Dropbox, Google Drive and One Drive
-  - Drag and drop markdown and HTML files into Dillinger
-  - Export documents as Markdown, HTML and PDF
-
-Markdown is a lightweight markup language based on the formatting conventions that people naturally use in email.  As [John Gruber] writes on the [Markdown site][df1]
-
-> The overriding design goal for Markdown's
-> formatting syntax is to make it as readable
-> as possible. The idea is that a
-> Markdown-formatted document should be
-> publishable as-is, as plain text, without
-> looking like it's been marked up with tags
-> or formatting instructions.
-
-This text you see here is *actually* written in Markdown! To get a feel for Markdown's syntax, type some text into the left window and watch the results in the right.
-
-### Tech
-
-Dillinger uses a number of open source projects to work properly:
-
-* [AngularJS] - HTML enhanced for web apps!
-* [Ace Editor] - awesome web-based text editor
-* [markdown-it] - Markdown parser done right. Fast and easy to extend.
-* [Twitter Bootstrap] - great UI boilerplate for modern web apps
-* [node.js] - evented I/O for the backend
-* [Express] - fast node.js network app framework [@tjholowaychuk]
-* [Gulp] - the streaming build system
-* [Breakdance](http://breakdance.io) - HTML to Markdown converter
-* [jQuery] - duh
-
-And of course Dillinger itself is open source with a [public repository][dill]
- on GitHub.
-
-### Installation
-
-Dillinger requires [Node.js](https://nodejs.org/) v4+ to run.
-
-Install the dependencies and devDependencies and start the server.
-
-```sh
-$ cd dillinger
-$ npm install -d
-$ node app
-```
-
-For production environments...
-
-```sh
-$ npm install --production
-$ NODE_ENV=production node app
-```
-
-### Plugins
-
-Dillinger is currently extended with the following plugins. Instructions on how to use them in your own application are linked below.
-
-| Plugin | README |
-| ------ | ------ |
-| Dropbox | [plugins/dropbox/README.md] [PlDb] |
-| Github | [plugins/github/README.md] [PlGh] |
-| Google Drive | [plugins/googledrive/README.md] [PlGd] |
-| OneDrive | [plugins/onedrive/README.md] [PlOd] |
-| Medium | [plugins/medium/README.md] [PlMe] |
-| Google Analytics | [plugins/googleanalytics/README.md] [PlGa] |
+PRACTICA 6.1
 
 
-### Development
+CREATE TABLE CENTROS(
+  Numce NUMBER(4) NOT NULL,
+  Nomce VARCHAR2(25) NOT NULL UNIQUE,
+  Dirce VARCHAR2(25),
+  CONSTRAINT PK_CENTROS PRIMARY KEY(numce)
+);
 
-Want to contribute? Great!
+CREATE TABLE DEPARTAMENTOS(
+  numde NUMBER(3) NOT NULL,
+  numce NUMBER(4),
+  direc NUMBER(3),
+  tidir CHAR(1),
+  presu NUMBER(3,1),
+  depde NUMBER(3),
+  NOMDE VARCHAR2(20),
+  CONSTRAINT PK_DEPARTAMENTOS PRIMARY KEY(numde),
+  CONSTRAINT FK1_DEPARTAMENTOS FOREIGN KEY(numce)
+    REFERENCES CENTROS(numce)
+    ON DELETE CASCADE
+);
 
-Dillinger uses Gulp + Webpack for fast developing.
-Make a change in your file and instantanously see your updates!
-
-Open your favorite Terminal and run these commands.
-
-First Tab:
-```sh
-$ node app
-```
-
-Second Tab:
-```sh
-$ gulp watch
-```
-
-(optional) Third:
-```sh
-$ karma test
-```
-#### Building for source
-For production release:
-```sh
-$ gulp build --prod
-```
-Generating pre-built zip archives for distribution:
-```sh
-$ gulp build dist --prod
-```
-### Docker
-Dillinger is very easy to install and deploy in a Docker container.
-
-By default, the Docker will expose port 8080, so change this within the Dockerfile if necessary. When ready, simply use the Dockerfile to build the image.
-
-```sh
-cd dillinger
-docker build -t joemccann/dillinger:${package.json.version}
-```
-This will create the dillinger image and pull in the necessary dependencies. Be sure to swap out `${package.json.version}` with the actual version of Dillinger.
-
-Once done, run the Docker image and map the port to whatever you wish on your host. In this example, we simply map port 8000 of the host to port 8080 of the Docker (or whatever port was exposed in the Dockerfile):
-
-```sh
-docker run -d -p 8000:8080 --restart="always" <youruser>/dillinger:${package.json.version}
-```
-
-Verify the deployment by navigating to your server address in your preferred browser.
-
-```sh
-127.0.0.1:8000
-```
-
-#### Kubernetes + Google Cloud
-
-See [KUBERNETES.md](https://github.com/joemccann/dillinger/blob/master/KUBERNETES.md)
+-- NO PUEDO DEFINIR LA FORÁNEA REFLEXIVA PORQUE
+-- NO PUEDO HACER REFERENCIA A UNA TABLA QUE
+-- NO EXISTE. LA CREO AHORA CON UN ALTER TABLE
 
 
-### Todos
-
- - Write MORE Tests
- - Add Night Mode
-
-License
-----
-
-MIT
+ALTER TABLE DEPARTAMENTOS
+ADD CONSTRAINT FK2_DEPARTAMENTOS
+FOREIGN KEY(depde)
+REFERENCES DEPARTAMENTOS(numde);
 
 
-**Free Software, Hell Yeah!**
+CREATE TABLE EMPLEADOS(
+  Numem NUMBER(3) NOT NULL,
+  Extel NUMBER(3),
+  Fecna DATE,
+  Fecin DATE,
+  Salar NUMBER(5),
+  Comis NUMBER(3),
+  Numhi NUMBER(1),
+  NOMEM VARCHAR2(10),
+  Numde NUMBER(3),
+  CONSTRAINT PK_EMPLEADOS PRIMARY KEY(numem),
+  CONSTRAINT FK1_EMPLEADOS FOREIGN KEY(numde)
+    REFERENCES DEPARTAMENTOS(numde)
+    ON DELETE CASCADE
+);
 
-[//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
+
+3) Inserta los siguientes datos en la tabla DEPARTAMENTOS.
+
+INSERT INTO DEPARTAMENTOS
+VALUES(100, 10,260,'P',72,NULL, 'DIRECCIÓN GENERAL');
+INSERT INTO DEPARTAMENTOS
+VALUES(110, 20,180,'P',90,100, 'DIRECC.COMERCIAL');
+INSERT INTO DEPARTAMENTOS
+VALUES(111, 20,180,'F',66,110, 'SECTOR INDUSTRIAL');
+INSERT INTO DEPARTAMENTOS
+VALUES(112, 20,270,'P',54,110, 'SECTOR SERVICIOS');
+INSERT INTO DEPARTAMENTOS
+VALUES(120, 10,150,'F',18,100, 'ORGANIZACIÓN');
+INSERT INTO DEPARTAMENTOS
+VALUES(121, 10,150,'P',12,120, 'PERSONAL');
+INSERT INTO DEPARTAMENTOS
+VALUES(122, 10,350,'P',36,120, 'PROCESO DE DATOS');
+INSERT INTO DEPARTAMENTOS
+VALUES(130, 10,310,'P',12,100, 'FINANZAS');
+
+4) ¿Qué ocurre al insertar el primer registro? ¿Por qué? Plantea la solución
 
 
-   [dill]: <https://github.com/joemccann/dillinger>
-   [git-repo-url]: <https://github.com/joemccann/dillinger.git>
-   [john gruber]: <http://daringfireball.net>
-   [df1]: <http://daringfireball.net/projects/markdown/>
-   [markdown-it]: <https://github.com/markdown-it/markdown-it>
-   [Ace Editor]: <http://ace.ajax.org>
-   [node.js]: <http://nodejs.org>
-   [Twitter Bootstrap]: <http://twitter.github.com/bootstrap/>
-   [jQuery]: <http://jquery.com>
-   [@tjholowaychuk]: <http://twitter.com/tjholowaychuk>
-   [express]: <http://expressjs.com>
-   [AngularJS]: <http://angularjs.org>
-   [Gulp]: <http://gulpjs.com>
+5) Inserta los siguientes datos en la tabla CENTROS
+INSERT INTO CENTROS VALUES(10,'SEDE CENTRAL','C/ ATOCHA, 820, MADRID');
+INSERT INTO CENTROS VALUES(20,'RELACIÓN CON CLIENTES','C/ ATOCHA, 405, MADRID');
 
-   [PlDb]: <https://github.com/joemccann/dillinger/tree/master/plugins/dropbox/README.md>
-   [PlGh]: <https://github.com/joemccann/dillinger/tree/master/plugins/github/README.md>
-   [PlGd]: <https://github.com/joemccann/dillinger/tree/master/plugins/googledrive/README.md>
-   [PlOd]: <https://github.com/joemccann/dillinger/tree/master/plugins/onedrive/README.md>
-   [PlMe]: <https://github.com/joemccann/dillinger/tree/master/plugins/medium/README.md>
-   [PlGa]: <https://github.com/RahulHP/dillinger/blob/master/plugins/googleanalytics/README.md>
+
+6) Descargate el script que te proporcionarán en clase para cargar los datos de la tabla EMPLEADOS.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Consultas Sencillas 
+
+1)Hallar, por orden alfabético, los nombres de los departamentos cuyo director lo es en funciones y no en propiedad.
+
+SELECT nomde
+FROM DEPARTAMENTOS
+WHERE tidir = 'F'
+ORDER BY 1;
+
+
+2)Obtener un listín telefónico de los empleados del departamento 121 incluyendo nombre de empleado, número de empleado y extensión telefónica. Por orden alfabético.
+
+SELECT Nomem , Numem , Extel
+FROM EMPLEADOS
+WHERE Numde = 121
+ORDER BY 1;
+
+
+3) Obtener por orden creciente una relación de todos los números de extensiones telefónicas de los empleados, junto con el nombre de estos, para aquellos que trabajen en el departamento 110. Mostrar la consulta tal y como aparece en la imagen.
+
+SELECT nomem "Nombre", extel AS "Extensión Telefónica"
+FROM EMPLEADOS
+WHERE numde = 110
+ORDER BY 1;
+
+4) Hallar la comisión, nombre y salario de los empleados que tienen tres hijos, clasificados por comisión, y dentro de comisión por orden alfabético.
+
+SELECT Comis,Nomem,Salar
+FROM EMPLEADOS
+WHERE Numhi = 3
+ORDER BY 1, 2;
+
+5) Hallar la comisión, nombre y salario de los empleados que tienen tres hijos, clasificados por comisión, y dentro de comisión por orden alfabético, para aquellos empleados que tienen comisión.
+
+SELECT Comis, Nomem, Salar
+FROM EMPLEADOS
+WHERE Numhi = 3 AND comis IS NOT NULL
+ORDER BY 1, 2;
+
+
+
+6) Obtener salario y nombre de los empleados sin hijos y cuyo salario es mayor que 1200 y menor que 1500 €. Se obtendrán por orden decreciente de salario y por orden alfabético dentro de salario.
+
+SELECT Salar,Nomem
+FROM EMPLEADOS
+WHERE Numhi = 0 AND salar > 1200 AND salar < 1500
+ORDER BY 1 DESC, 2;
+
+
+7) Obtener los números de los departamentos donde trabajan empleados cuyo salario sea inferior a 1500 €
+
+SELECT DISTINCT Numde
+FROM EMPLEADOS
+WHERE Salar < 1500
+ORDER BY 1;
+
+
+8) Obtener las distintas comisiones que hay en el departamento 110.
+SELECT DISTINCT Comis
+FROM EMPLEADOS
+WHERE Numde = 110;
+
+Consultas con Predicados BETWEEN
+
+1) Obtener por orden alfabético los nombres de los empleados cuyo salario está entre 1500€ y 1600 €
+
+SELECT NONEM 
+FROM EMPLEADOS
+WHERE salar between 1500 and 1600
+	ORDER BY 1;
+
+
+
+2) Obtener por orden alfabético los nombres y salarios de los empleados con comisión,
+	cuyo salario dividido por su número de hijos cumpla una, o ambas, de las dos 	condiciones
+	siguientes:
+
+
+SELECT nomem, salar
+FROM EMPLEADOS
+WHERE salar NOT BETWEEN 720*numhi AND 50*comis*numhi
+AND comis IS NOT NULL
+ORDER BY 1; 
+
+
+
+
+
+
+
+
+
+
+Consultas con Predicados LIKE 
+
+
+1) Obtener por orden alfa el nombre y el salario de aquellos empleados que comienzan por
+	la letra 'A' y muestra la consulta como aparece en la captura.
+
+	SELECT NOMEM
+	FROM EMPLEADOS
+	WHERE LIKE ‘A%’
+
+
+2) Obtener por orden alfabético los nombres de los empleados que tengan 8 letras.
+
+3) Obtener por orden alfabético los nombres y el presupuesto de los departamentos que incluyen la palabra “SECTOR”. La consulta la deberás mostrar como la imagen
+
+Consultas con Predicados IN 
+
+1) Obtener por orden alfabético los nombres de los empleados cuya extensión telefónica es
+	250 o 750
+
+	SELECT NONEM
+	FROM EMPLEADOS
+	WHERE
+	WYHERE EXTEL IN (250,270)
+
+
+
+2) Obtener por orden alfabético los nombres de los empleados que trabajan en el mismo
+	departamento que PILAR o DOROTEA
+
+	SELECT NONEM
+	FROM EMPLEADOS
+	WHERE NUMDE IN (
+		SELECT NUMDE
+		FROM EMPLEADOS
+		WHERE NOMEM IN (`PILAR` , ‘DOROTEA’))
+		ORDER BY 1;
+
+
+
+
+
+
+
+
+
+
+
+
+3) Obtener por orden alfabético los nombres de los departamentos cuyo director es el
+mismo que el del departamento: DIRECC.COMERCIAL o el del departamento:
+PERSONAL Mostrar la consulta como la imagen.
+
+SELECT NOMDE “Nombres Departamentos” direc “Identificador de su director”
+FROM DEPARTAMENTOS
+WHERE direc IN (
+	SELECT direc 
+	FROM DEPARTAMENTOS
+	WHERE NOMDE IN (‘DIRECC.COMERCIAL’ , ‘PERSONAL’));
+
+Consultas con Predicados EXISTS 
+1) Obtener los nombres de los centros de trabajo si hay alguno que esté en la calle
+ATOCHA
+SELECT NOMEM, SALAR
+FROM EMPLEADOS
+WHERE NUMDE = 100 AND EXISTS (
+
+	SELECT *
+	FROM EMPLEADOS
+	WHERE SALAR >1300 and numde = 100;
+	)
+
+2) Obtener los nombres y el salario de los empleados del departamento 100 si en él hay
+alguno que gane más de 1300 €. 
